@@ -1,0 +1,18 @@
+.input-group {
+    margin-top: 2em;
+  }
+  .form-control {
+    font-size: 1.2rem;
+    padding: 10px 16px;
+  }
+  
+  .btn {
+    font-size: 24px;
+    margin-top: 2rem;
+  }
+  
+  .calc-head {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
