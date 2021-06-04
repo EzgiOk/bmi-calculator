@@ -6,16 +6,16 @@ function Result() {
     return (
         <Context.Consumer>
         {(context) => {
-            const { bmi} = Context;
+            const { bmi} = context;
             return (
-            console.log(bmi)
-            /* <div>
+
+           <div>
                 <h2>Your Bmi is: {bmi}</h2>
                 <Link to="/">
                     <button>Try Again </button>
                 </Link>
                 
-            </div> */
+            </div>
             );
            
         }}

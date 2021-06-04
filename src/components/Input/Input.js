@@ -43,14 +43,13 @@ function Input() {
                     </div>
                   </div>
                   {/* <input  type='submit' value='Calculate'/> */}
-                  {/* <Link to="/result"> */}
+                  <Link to="/result">
                       <button type='submit' className="btn btn-block btn-secondary mb-3">
                       Calculate
                       </button>
-                  {/* </Link> */}
+                  </Link>
 
                 </form>
-                <p>{context.bmi}</p>
               </div>
           </div>
     </div>)
