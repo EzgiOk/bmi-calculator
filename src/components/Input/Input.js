@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/ContextProvider";
 import "./Input.css";
+import {Button} from "../../styled/Button";
 
 function Input() {
 
@@ -42,11 +43,11 @@ function Input() {
                       </span>
                     </div>
                   </div>
-                  {/* <input  type='submit' value='Calculate'/> */}
-                  <Link to="/result">
-                      <button type='submit' className="btn btn-block btn-secondary mb-3">
+                  <Link to="/result" style={{ textDecoration: 'none' }}>
+                  <Button>Calculate</Button>
+                   {/* <button type='submit' className="btn form-btn btn-block btn-outline-secondary mb-3">
                       Calculate
-                      </button>
+                      </button>  */}
                   </Link>
 
                 </form>

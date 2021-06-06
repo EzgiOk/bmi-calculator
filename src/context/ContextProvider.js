@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState} from "react"
 import React from "react";
 
+
 export const Context = createContext();
 
 export function ContextProvider(props){
@@ -13,6 +14,8 @@ export function ContextProvider(props){
     useEffect(()=>{
         setBmi(bmiCalc);
     }, [bmiCalc])
+
+    localStorage.setItem("bmi", bmi);
   
     function calculate(e) {
       e.preventDefault();

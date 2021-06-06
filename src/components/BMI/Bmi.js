@@ -1,38 +1,51 @@
 import React from "react";
 import "./Bmi.css";
-//import Accordion from "react-bootstrap/Accordion";
+
 
 function Bmi() {
   return (
-    // <Accordion defaultActiveKey="0" flush>
-    //   <Accordion.Item eventKey="0">
-    //     <Accordion.Header className="ac-header">What is BMI?</Accordion.Header>
-    //     <Accordion.Body>
-    //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    //       minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    //       aliquip ex ea commodo consequat. Duis aute irure dolor in
-    //       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    //       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    //       culpa qui officia deserunt mollit anim id est laborum.
-    //     </Accordion.Body>
-    //   </Accordion.Item>
-    //   <Accordion.Item eventKey="1">
-    //     <Accordion.Header className="ac-header">
-    //       How to calculate?
-    //     </Accordion.Header>
-    //     <Accordion.Body>
-    //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    //       minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    //       aliquip ex ea commodo consequat. Duis aute irure dolor in
-    //       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    //       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    //       culpa qui officia deserunt mollit anim id est laborum.
-    //     </Accordion.Body>
-    //   </Accordion.Item>
-    // </Accordion>
-    <div>Hello</div>
+<div className="accordion" id="accordionExample">
+  <div className="card">
+    <div className="card-header" id="headingOne">
+      <h2 className="mb-0">
+        <button className="btn coll-btn btn-outline-secondary btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What Is BMI?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div className="card-body">
+      BMI is a measurement that takes into account your height and weight to produce a calculation. This calculation is a measurement of your body size and can be used to determine how your body weight is related to your height.
+
+      BMI is not a diagnostic tool nor is it a measurement of body fat percentage. A high BMI may be an indicator of high body fat, but it doesn't necessarily mean that a person is overweight or obese and it alone is not a direct indicator of health.
+
+
+
+      </div>
+    </div>
+  </div>
+  <div className="card">
+    <div className="card-header" id="headingTwo">
+      <h2 className="mb-0">
+        <button className="btn coll-btn btn-outline-secondary btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How BMI Is Measured?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div className="card-body">
+      <p>Metric</p>
+      <ul>
+        <li>Formula: weight (kg) / [height (m)]21</li>
+        <li>Example: weight = 68 kg, height = 165 cm (1.65 m)</li>
+        <li>BMI calculation: 68 / (1.65)2 = 24.98</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
   );
 }
 
