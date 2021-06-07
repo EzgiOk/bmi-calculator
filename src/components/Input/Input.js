@@ -45,9 +45,6 @@ function Input() {
                   </div>
                   <Link to="/result" style={{ textDecoration: 'none' }}>
                   <Button>Calculate</Button>
-                   {/* <button type='submit' className="btn form-btn btn-block btn-outline-secondary mb-3">
-                      Calculate
-                      </button>  */}
                   </Link>
 
                 </form>
