@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
-import Input from "../Input/Input";
-import Bmi from "../BMI/Bmi";
+import "./Home.page.css";
+import Input from "../../components/Input/Input";
+import Bmi from "../../components/BMI/Bmi";
 
 function Home() {
   return (

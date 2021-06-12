@@ -4,7 +4,7 @@ import "./Bmi.css";
 
 function Bmi() {
   return (
-<div className="accordion" id="accordionExample">
+<div className="accordion mt-4 mb-5" id="accordionExample">
   <div className="card">
     <div className="card-header" id="headingOne">
       <h2 className="mb-0">

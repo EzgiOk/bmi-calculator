@@ -9,16 +9,17 @@ function Input() {
   return (
     <Context.Consumer>
       {(context) => {
+       let {calculate, height, handleHeightChange, weight, handleWeightChange, bmiCalc} = context;
       return (  
         <div>
             <div>
               <h2 className="calc-head">Calculate Your BMI</h2>
               <div className="form">
-              <form onSubmit={context.calculate}>
+              <form>
                   <div className="input-group mb-3">
                     <input
-                      value={context.height}
-                      onChange={context.handleHeightChange}
+                      value={height}
+                      onChange={handleHeightChange}
                       type="text"
                       className="form-control"
                       placeholder="Height"
@@ -31,8 +32,8 @@ function Input() {
                   </div>
                   <div className="input-group mb-3">
                     <input
-                      value={context.weight}
-                      onChange={context.handleWeightChange}
+                      value={weight}
+                      onChange={handleWeightChange}
                       type="text"
                       className="form-control"
                       placeholder="Weight"
@@ -43,8 +44,8 @@ function Input() {
                       </span>
                     </div>
                   </div>
-                  <Link to="/result" style={{ textDecoration: 'none' }}>
-                  <Button>Calculate</Button>
+                  <Link to={bmiCalc > 0 ? "/result" : "/"} style={{ textDecoration: 'none' }}>
+                  <Button onClick={calculate}>Calculate</Button>
                   </Link>
 
                 </form>

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState} from "react"
+import { createContext, useState} from "react"
 import React from "react";
 
 
@@ -11,17 +11,17 @@ export function ContextProvider(props){
 
     let bmiCalc = (weight / (height / 100) ** 2).toFixed(2);
 
-    useEffect(()=>{
-        setBmi(bmiCalc);
-    }, [bmiCalc])
-
-    localStorage.setItem("bmi", bmi);
+    // useEffect(()=>{
+    //     setBmi(bmiCalc);
+    // }, [bmiCalc])
   
     function calculate(e) {
-      e.preventDefault();
-      // const bmiCalc = (weight / (height / 100) ** 2).toFixed(2);
-      // setBmi(bmiCalc);
-    }
+     bmiCalc = (weight / (height / 100) ** 2).toFixed(2);
+      setHeight()
+      setWeight()
+      setBmi(bmiCalc);
+  }
+  localStorage.setItem("bmi", bmi);
   
     function handleHeightChange(e) {
       let heightValue = e.target.value;
@@ -34,7 +34,7 @@ export function ContextProvider(props){
     }
 
     return (
-        <Context.Provider value={{calculate, handleHeightChange, handleWeightChange, bmi, height, weight}}>
+        <Context.Provider value={{calculate, handleHeightChange, handleWeightChange, bmi, height, weight, bmiCalc}}>
             {props.children}
         </Context.Provider>
     )

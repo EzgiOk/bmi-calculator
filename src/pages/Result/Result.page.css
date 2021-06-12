@@ -1,0 +1,64 @@
+.result-container{
+    text-align: center;
+    padding-left: 0;
+}
+.result{
+    font-family: 'Montserrat', sans-serif;
+}
+.result-heading{
+    color: #6c757d;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.result-p{
+    font-size: 24px;
+    margin-top: 1.4rem;
+}
+.result-btn {
+    padding-left: 48px;
+    padding-right: 48px;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+.calc-result{
+    color: #6c757d;
+    font-size: 45px; 
+}
+.list{
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0.5;
+}
+
+.bmi-image{
+    width: 100%;
+    height: auto;
+}
+.underweight-color{
+    color:#ffc107
+}
+
+.overweight-color{
+    color: #e1701a;
+}
+
+.modal{
+    color:#6c757d;
+}
+.modal-content{
+    border-radius: 1.3rem;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+.model-body{
+    padding: 25px;
+}
+
+#contained-modal-title-vcenter {
+    font-size:30px;
+    margin-top: 20px;
+    padding: 10px;
+}
